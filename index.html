@@ -1,0 +1,106 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+  <div class="calculator">
+      <div class="border-bottom"></div>
+        <div class="result-box">
+           <input id="calc-result-input" type="text" class="result" value="0" readonly>
+        </div>
+            <div class="numpad">
+                <div class="row">
+                    <div class="key">
+                        <button onclick="calcClear()">c</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="onOperatorClick('*')">*</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="onOperatorClick('/')">/</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button>√</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="key">
+                        <button onclick="insertNumber(7)">7</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="insertNumber(8)">8</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="insertNumber(9)">9</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="onOperatorClick('+')">+</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="key">
+                        <button onclick="insertNumber(4)">4</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="insertNumber(5)">5</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="insertNumber(6)">6</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="onOperatorClick('-')">-</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="row r-4">
+                    <div class="key">
+                        <button onclick="insertNumber(1)">1</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="insertNumber(2)">2</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button onclick="insertNumber(3)">3</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key equal">
+                        <button onclick="onEqualClick()" >=</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="row r-5">
+                    <div class="key zero">
+                        <button onclick="insertNumber(0)">0</button>
+                        <div class="border-bottom"></div>
+                        </div>
+                    <div class="key">
+                        <button onclick="onDotClick()">.</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button>←</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="key">
+                        <button>+/-</button>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <script src="script.js"></script>
+  </body>
+ </div>
